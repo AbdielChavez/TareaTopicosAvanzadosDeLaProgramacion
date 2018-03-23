@@ -20,6 +20,7 @@ public class Examen_Topicos extends JFrame{
     private JButton btnEuroaPesos;
     private JButton btnEuroaDolar;
     private JTextField edtUsr;
+    
     //private ActionBoton btn = new ActionBoton();
     //creacion de constructor
     
@@ -125,7 +126,8 @@ Container ContenedorPrincipal = this.getContentPane();
              if((JButton)e.getSource() == btnDolaraEuro){
              
                  double pesos1 = Integer.parseInt(edtUsr.getText());
-                 double valorfinal = 20 / 22;
+                 double pesos2 = pesos1 * 20;
+                 double valorfinal = pesos2 / 22;
                  JOptionPane.showMessageDialog(null, "El valor de conversion es: " + valorfinal, "conversion", JOptionPane.INFORMATION_MESSAGE);
              }
              if((JButton)e.getSource() == btnEuroaPesos){
